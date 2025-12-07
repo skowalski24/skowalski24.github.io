@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cult of Coin – Case Study | madebyskows</title>
+  <meta name="description" content="Case study for Cult of Coin, a satirical idle game about money, ritual, and mindless progression, built in Unity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site">
+      <div class="header-inner">
+        <a href="index.html" class="brand">
+          <div class="brand-mark">S</div>
+          <div class="brand-text">
+            <span class="brand-name">madebyskows</span>
+            <span class="brand-tagline">Made by Skows LLC</span>
+          </div>
+        </a>
+        
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="portfolio.html" class="active">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="site">
+      
+      <!-- Case Study Hero -->
+      <section class="case-hero">
+        <a href="portfolio.html" class="back-link">← Back to Portfolio</a>
+        <span class="tag">Idle Game · Unity</span>
+        <h1>Cult of Coin</h1>
+        <p class="case-intro">
+          A satirical idle clicker that indulges in mindless progression while poking fun at
+          capitalism, ritual, and the way people surrender agency to systems that promise
+          endless growth.
+        </p>
+      </section>
+
+      <!-- Case Study Content -->
+      <section class="section">
+        <div class="case-grid">
+          <div class="case-main">
+            <img src="assets/thumb-cult-of-coin.svg" alt="Cult of Coin screenshot" class="case-image">
+            
+            <h2>Overview</h2>
+            <p>
+              <em>Cult of Coin</em> is a Unity-based idle game designed to be simple, compulsive,
+              and intentionally mindless. Players tap to generate coins, unlock followers that
+              automate income, and watch numbers grow larger and more abstract over time.
+            </p>
+            <p>
+              On the surface, it is a short-session idle game meant to be checked for a few
+              minutes, provide some small dopamine hits and jokes, and then be closed.
+              Underneath that surface, it uses satire, exaggerated systems, and religious
+              language to comment on how money and worship blur together in capitalist systems.
+            </p>
+            <p>
+              This project was built as a fully shippable mobile game and as a way to explore
+              how players interact with compulsion loops, delegation, and progression systems
+              when the optimal play is often to stop actively playing.
+            </p>
+
+            <h2>Design Goals</h2>
+            <ul>
+              <li>Create an idle loop that is instantly understandable and frictionless.</li>
+              <li>Lean into mindlessness as part of the intended player experience.</li>
+              <li>Use satire and flavor text to frame familiar idle mechanics.</li>
+              <li>Allow imbalance and runaway growth rather than enforcing perfect balance.</li>
+              <li>Ship a complete Unity game with ads, saves, and mobile-ready UX.</li>
+            </ul>
+
+            <h2>My Role</h2>
+            <p>
+              I designed and built the game solo, owning both design and implementation:
+            </p>
+            <ul>
+              <li>Core idle loop and progression structure</li>
+              <li>Compounding economy and multiplier systems</li>
+              <li>Edict and idol progression concepts</li>
+              <li>Mobile UX for short, repeatable play sessions</li>
+              <li>Unity implementation in C#, including AdMob integration</li>
+              <li>All tone, copy, and satirical flavor content</li>
+            </ul>
+
+            <h2>Core Loop & Progression</h2>
+            <p>
+              The core loop is intentionally familiar:
+            </p>
+            <ul>
+              <li>Tap a central coin to generate currency.</li>
+              <li>Spend coins on followers that generate income passively.</li>
+              <li>Upgrade generators and unlock multipliers.</li>
+              <li>Ascend to reset progress in exchange for persistent bonuses.</li>
+            </ul>
+            <p>
+              Each ascension accelerates future runs, encouraging short, ritualistic play
+              cycles where players “do their tasks,” watch numbers grow, and move on.
+              The optimal strategy increasingly becomes delegation rather than direct input.
+            </p>
+
+            <h2>Satire, Compulsion, and Illusory Choice</h2>
+            <p>
+              Many of <em>Cult of Coin</em>’s systems are intentionally framed as choices with
+              minimal long-term impact. Edicts, for example, allow players to make small
+              directional decisions during a run—but are ultimately overshadowed by large,
+              compounding idle income.
+            </p>
+            <p>
+              This was not treated as a failure of the system, but as part of the satire.
+              The promise of “meaningful choice” exists, but the structure quietly rewards
+              submission to automation and scale instead.
+            </p>
+            <p>
+              Over time, the game nudges players toward detachment: letting followers work,
+              trusting the system, and returning only to perform the next ritual reset.
+            </p>
+
+            <h2>Player Behavior & Design Observations</h2>
+            <p>
+              Designing <em>Cult of Coin</em> reinforced how quickly players internalize
+              compulsion loops that are simple and intuitive, even when the interactions
+              themselves are shallow.
+            </p>
+            <ul>
+              <li>Novelty wears off quickly—as expected in idle games.</li>
+              <li>Players default to automation as soon as it becomes efficient.</li>
+              <li>Small visual and textual feedback loops sustain engagement longer than
+                  mechanical depth alone.</li>
+            </ul>
+            <p>
+              Much of the satisfaction comes not from mastery, but from routine: checking in,
+              making a few upgrades, and leaving again.
+            </p>
+
+            <h2>Monetization as Design Constraint</h2>
+            <p>
+              Monetization was approached as both a practical requirement and a learning goal.
+              The game uses optional ads (such as doubling offline earnings) paired with a
+              paid option to remove ads entirely.
+            </p>
+            <p>
+              This structure mirrors many idle games the project draws inspiration from and
+              allowed me to gain hands-on experience integrating monetization systems into
+              Unity without blocking core progression or forcing purchases.
+            </p>
+
+            <h2>Technical Notes</h2>
+            <p>
+              The game is built in Unity using C#, with systems designed to scale quickly:
+            </p>
+            <ul>
+              <li>Modular income generators and multipliers</li>
+              <li>Data-driven tuning for progression pacing</li>
+              <li>Save/load for persistent idle progress</li>
+              <li>AdMob integration for rewarded ads and ad removal</li>
+            </ul>
+            <p>
+              Implementing these overlapping systems highlighted how quickly small modifiers
+              compound, and how important clear structure becomes as complexity grows.
+            </p>
+
+            <h2>Outcomes & Learnings</h2>
+            <ul>
+              <li>Deepened my understanding of compounding systems and runaway growth.</li>
+              <li>Reinforced how design can shape player behavior without explicit instruction.</li>
+              <li>Provided hands-on experience shipping a mobile Unity project end-to-end.</li>
+              <li>Highlighted the tension between agency, automation, and engagement.</li>
+            </ul>
+
+            <h2>Why This Project Matters</h2>
+            <p>
+              <em>Cult of Coin</em> is intentionally a small, silly game—but it represents an
+              important step in my development as a gameplay designer. It reflects a comfort
+              with systems, player psychology, and shipping real products, even when the
+              experience itself is meant to be disposable and light.
+            </p>
+            <p>
+              While later projects push toward deeper or more expressive systems, this one
+              grounded my understanding of how rules, incentives, and feedback loops shape
+              player behavior at scale.
+            </p>
+          </div>
+          
+          <aside class="case-sidebar">
+            <div class="case-meta">
+              <h3>Project Details</h3>
+              <dl>
+                <dt>Role</dt>
+                <dd>Designer & Developer</dd>
+                <dt>Timeline</dt>
+                <dd>2024–2025</dd>
+                <dt>Team Size</dt>
+                <dd>Solo</dd>
+                <dt>Platform</dt>
+                <dd>Mobile (Android, iOS planned)</dd>
+                <dt>Engine</dt>
+                <dd>Unity</dd>
+              </dl>
+            </div>
+            
+            <div class="case-meta">
+              <h3>Skills Used</h3>
+              <ul class="skill-tags">
+                <li>Gameplay Systems Design</li>
+                <li>Compulsion & Progression Design</li>
+                <li>Mobile UX</li>
+                <li>Unity (C#)</li>
+                <li>Monetization Integration</li>
+                <li>Tone & Satirical Writing</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section cta-section text-center">
+        <h2>Interested in this project?</h2>
+        <p>Get in touch to talk about systems design, idle games, or shipping mobile projects.</p>
+        <a href="contact.html" class="btn btn-primary">Contact Me</a>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site">
+      <div class="footer-inner">
+        <p class="footer-copyright">© <span id="year"></span> Made by Skows LLC. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="legal.html">Legal</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — madebyskows</title>
+  <meta name="description" content="About madebyskows — gameplay and systems designer focused on mechanics, meaning, and scalable experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <!-- Header -->
+  <header class="site-header">
+    <div class="site">
+      <div class="header-inner">
+        <a href="index.html" class="brand">
+          <div class="brand-mark">S</div>
+          <div class="brand-text">
+            <span class="brand-name">madebyskows</span>
+            <span class="brand-tagline">Made by Skows LLC</span>
+          </div>
+        </a>
+        
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html" class="active">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="site">
+      
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1>About</h1>
+        <p class="lead">
+          Gameplay and systems designer focused on how mechanics shape meaning,
+          behavior, and long-term player engagement.
+        </p>
+      </div>
+
+      <!-- Content -->
+      <section class="section">
+        <div class="prose">
+          
+          <h2>Who I Am</h2>
+          <p>
+            I’m a gameplay and systems designer who cares about how things feel,
+            how they behave over time, and what they quietly say to the player.
+            My work spans narrative JRPGs, satirical idle games, mobile social apps,
+            and prototypes that exist purely to explore an idea.
+          </p>
+          <p>
+            I’m especially interested in the point where systems, narrative, and
+            player psychology overlap — how a loop can suggest a worldview, how
+            constraints can become expressive, and how “fun” and “thoughtful”
+            don’t have to be opposites.
+          </p>
+
+          <h2>Design Philosophy</h2>
+          <p>
+            Across projects, I approach design with a systems-first mindset:
+          </p>
+          <ul>
+            <li>
+              <strong>Systems as language</strong> — Mechanics should communicate
+              ideas, not just carry numbers.
+            </li>
+            <li>
+              <strong>Player behavior over power</strong> — I care less about how
+              big the numbers get, and more about what players choose to do.
+            </li>
+            <li>
+              <strong>Intentional constraint</strong> — Limits (no grinding, fixed
+              routes, simple resources) create clearer, more expressive decisions.
+            </li>
+            <li>
+              <strong>Ethical engagement</strong> — Retention and monetization
+              should feel respectful, not extractive.
+            </li>
+            <li>
+              <strong>Scalability</strong> — Systems should survive growth, new
+              content, and real-world usage without collapsing.
+            </li>
+          </ul>
+
+          <h2>What I Work On</h2>
+          <p>
+            A few projects that represent how I think and build:
+          </p>
+          <ul>
+            <li>
+              <strong>Past the End</strong> — A narrative JRPG where handcrafted
+              encounters, exploration-driven progression, and absurdist philosophy
+              all work together to explore what “meaningful choice” looks like
+              when the ending doesn’t change.
+            </li>
+            <li>
+              <strong>Cult of Coin</strong> — A Unity idle game about compulsion,
+              progression systems, and how player agency can quietly erode inside
+              efficient economies — all wrapped in a silly, satirical tone.
+            </li>
+            <li>
+              <strong>Song of the Day</strong> — A cozy social music app built
+              with Expo and Firebase, focused on calm UX, privacy-aware design,
+              and scalable social features centered on one simple daily ritual.
+            </li>
+            <li>
+              <strong>Emberrun & Trailflip</strong> — Prototypes that pushed my
+              understanding of scope, mobile-first design, and how to build
+              interesting systems from a small, approachable set of mechanics.
+            </li>
+          </ul>
+
+          <p>
+            Whether I’m working on a JRPG encounter, an idle economy, or a social
+            feature, the throughline is the same: use systems to say something,
+            and make sure the player can feel it.
+          </p>
+
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-section">
+        <h2>Let’s Work Together</h2>
+        <p>
+          I’m open to gameplay and systems design roles, consulting on loops and
+          progression, or collaborating on projects where mechanics and meaning
+          need to line up.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site">
+      <div class="footer-inner">
+        <p class="footer-copyright">© <span id="year"></span> Made by Skows LLC. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="legal.html">Legal</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

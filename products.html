@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — madebyskows</title>
+  <meta name="description" content="Games and apps by Made by Skows LLC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site">
+      <div class="header-inner">
+        <a href="index.html" class="brand">
+          <div class="brand-mark">S</div>
+          <div class="brand-text">
+            <span class="brand-name">madebyskows</span>
+            <span class="brand-tagline">Made by Skows LLC</span>
+          </div>
+        </a>
+        
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html" class="active">Products</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="site">
+      
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1>Products</h1>
+        <p class="lead">Games and apps released or in development. Each product page contains details, screenshots, and store links.</p>
+      </div>
+
+      <!-- Games -->
+      <section class="section">
+        <div class="section-header">
+          <h2>Games</h2>
+          <p>Available games, ordered by release date (newest first).</p>
+        </div>
+
+        <div class="projects">
+          <!-- Cult of Coin -->
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-type">Mobile Game</span>
+              </div>
+              <h3 class="project-title">Cult of Coin</h3>
+              <p class="project-description">A casual idle game about compulsion, progression, and letting systems
+                run themselves — with satire hiding just beneath the surface.</p>
+              <div class="project-tags">
+                <span class="tag">Unity</span>
+                <span class="tag">Idle</span>
+                <span class="tag">Mobile</span>
+              </div>
+              <a href="product-cult-of-coin.html" class="project-link">View Product</a>
+            </div>
+            <div class="project-thumbnail">
+              <span>Screenshot coming soon</span>
+            </div>
+          </article>
+
+          <!-- Past the End -->
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-type">Narrative JRPG</span>
+              </div>
+              <h3 class="project-title">Past the End</h3>
+              <p class="project-description">An episodic narrative JRPG driven by handcrafted encounters,
+                exploration-based progression, and philosophy expressed through play.</p>
+              <div class="project-tags">
+                <span class="tag">JRPG</span>
+                <span class="tag">Narrative</span>
+              </div>
+              <a href="product-past-the-end.html" class="project-link">View Product</a>
+            </div>
+            <div class="project-thumbnail">
+              <img src="assets/PastTheEnd/titleCard.png" alt="Past the End title card">
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Apps -->
+      <section class="section">
+        <div class="section-header">
+          <h2>Apps</h2>
+          <p>Available apps, ordered by release date (newest first).</p>
+        </div>
+
+        <div class="projects">
+          <!-- Song of the Day -->
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-type">Mobile App</span>
+              </div>
+              <h3 class="project-title">Song of the Day</h3>
+              <p class="project-description">A cozy social music diary for sharing one song a day, reflecting on
+                your listening habits, and staying softly connected with friends.</p>
+              <div class="project-tags">
+                <span class="tag">iOS</span>
+                <span class="tag">Social</span>
+              </div>
+              <a href="product-song-of-the-day.html" class="project-link">View Product</a>
+            </div>
+            <div class="project-thumbnail">
+              <span>Screenshot coming soon</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site">
+      <div class="footer-inner">
+        <p class="footer-copyright">© <span id="year"></span> Made by Skows LLC. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="legal.html">Legal</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

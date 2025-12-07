@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emberrun – Case Study | madebyskows</title>
+  <meta name="description" content="Case study for Emberrun, a prototype roguelike card battler focused on team synergy and deckbuilding.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-mark">S</div>
+        <div class="brand-text">
+          <span class="brand-name">madebyskows</span>
+          <span class="brand-tagline">Made by Skows LLC</span>
+        </div>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="site">
+    <section class="case-hero">
+      <a href="portfolio.html" class="back-link">← Back to Portfolio</a>
+      <span class="tag">Game Prototype · Unity</span>
+      <h1>Emberrun</h1>
+      <p class="case-intro">
+        A roguelike card battler prototype focused on team composition,
+        character synergies, and deckbuilding as the primary strategic layer.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="case-grid">
+        <div class="case-main">
+          <img src="assets/thumb-emberrun.svg" alt="Emberrun prototype" class="case-image">
+
+          <h2>Overview</h2>
+          <p>
+            Emberrun was my first Unity project and an early attempt at building
+            a complex, systems-heavy roguelike card game. The core idea centered on
+            party-based deckbuilding: each character contributed unique cards,
+            and overall strategy emerged from team composition rather than individual
+            card power.
+          </p>
+          <p>
+            While the project never progressed beyond a functional prototype,
+            it played a crucial role in shaping how I think about scope, systems,
+            and implementable design.
+          </p>
+
+          <h2>Design Goals</h2>
+          <ul>
+            <li>Make team synergy the primary source of strategy.</li>
+            <li>Give each character a distinct mechanical identity.</li>
+            <li>Explore how deckbuilding emerges from party composition.</li>
+            <li>Prototype a Slay-the-Spire–inspired structure in Unity.</li>
+          </ul>
+
+          <h2>Core Systems Explored</h2>
+          <ul>
+            <li>Party-based deckbuilding (cards tied to characters)</li>
+            <li>Action Point (AP) limited turn-based combat</li>
+            <li>Status effects and inter-character synergies</li>
+            <li>Relics and neutral cards to supplement party builds</li>
+          </ul>
+
+          <h2>What Worked</h2>
+          <p>
+            The conceptual foundation was strong. Designing characters and their
+            associated cards reinforced how much depth can come from interlocking
+            systems rather than content volume. The synergy system—where the presence
+            of certain characters unlocked additional effects—became the most
+            promising aspect of the design.
+          </p>
+
+          <h2>What Didn’t (and Why That Matters)</h2>
+          <p>
+            Emberrun was over-scoped for my experience level at the time.
+            While I implemented a basic battle system and character selection,
+            many systems remained conceptual rather than fully realized.
+          </p>
+          <p>
+            This project made two things very clear:
+          </p>
+          <ul>
+            <li>I needed to design within tighter constraints.</li>
+            <li>I needed deeper technical fluency before building large systems.</li>
+          </ul>
+
+          <h2>Key Lessons</h2>
+          <ul>
+            <li>Ambitious ideas need proportional tooling and experience.</li>
+            <li>Systems design must account for implementation reality.</li>
+            <li>Smaller, focused prototypes lead to better iteration.</li>
+          </ul>
+
+          <h2>Why It’s Still in My Portfolio</h2>
+          <p>
+            Emberrun represents a pivotal learning moment. It directly influenced
+            my shift toward smaller, systems-focused projects like Cult of Coin
+            and Trailflip, where scope control and iteration became central.
+          </p>
+        </div>
+
+        <aside class="case-sidebar">
+          <div class="case-meta">
+            <h3>Project Details</h3>
+            <dl>
+              <dt>Role</dt>
+              <dd>Designer & Developer</dd>
+              <dt>Status</dt>
+              <dd>Exploratory Prototype</dd>
+              <dt>Engine</dt>
+              <dd>Unity</dd>
+            </dl>
+          </div>
+
+          <div class="case-meta">
+            <h3>Skills</h3>
+            <ul class="skill-tags">
+              <li>Systems Design</li>
+              <li>Deckbuilding</li>
+              <li>Team Synergies</li>
+              <li>Unity (Learning)</li>
+              <li>Scope Evaluation</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section cta-section text-center">
+      <h2>Interested in My Process?</h2>
+      <p>Happy to talk about systems design, prototyping, or iterative learning.</p>
+      <a href="contact.html" class="btn btn-primary">Contact Me</a>
+    </section>
+  </div>
+</main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site">
+      <div class="footer-inner">
+        <p class="footer-copyright">© <span id="year"></span> Made by Skows LLC. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="legal.html">Legal</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

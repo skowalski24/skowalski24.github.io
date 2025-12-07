@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0" stop-color="#A3E635"/>
+      <stop offset="1" stop-color="#C084FC"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" rx="18" fill="url(#g2)" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="system-ui,Inter,Arial" font-size="36" fill="#050513">Cult of Coin — thumbnail</text>
+</svg>
