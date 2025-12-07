@@ -1058,6 +1058,16 @@ p:last-child {
   }
 }
 
+/* General utility for overview/showcase cards on product & portfolio pages */
+.showcase-card {
+  margin-top: var(--space-3xl);
+  margin-bottom: var(--space-3xl);
+  padding: var(--space-xl);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
 .case-sidebar {
   position: sticky;
   top: 100px;
