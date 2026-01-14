@@ -4,11 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cult of Coin – Case Study | madebyskows</title>
-  <meta name="description" content="Case study for Cult of Coin, a satirical idle game about money, ritual, and mindless progression, built in Unity.">
+  <meta name="description" content="Case study on designing prestige-driven idle economy systems for Cult of Coin, exploring how to make frequent resets feel optimal without making progress feel disposable.">
+    <link rel="icon" type="image/png" href="assets/MadeBySkows/skowsRaccoonHeadSOTD.png">
+  <link rel="apple-touch-icon" href="assets/MadeBySkows/skowsRaccoonHeadSOTD.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Chart/figure styling */
+    .chart-figure {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 1em;
+      margin: 1.5em 0;
+    }
+    .chart-figure img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius-sm);
+    }
+    .chart-figure figcaption {
+      margin-top: 0.75em;
+      font-size: 0.9em;
+      color: var(--color-text-secondary);
+      text-align: center;
+    }
+    
+    /* Callout boxes */
+    .callout {
+      background: var(--color-bg-elevated);
+      border-left: 4px solid var(--color-accent);
+      border-radius: var(--radius-md);
+      padding: 1.25em 1.5em;
+      margin: 1.5em 0;
+    }
+    .callout p {
+      margin: 0;
+    }
+    .callout em {
+      font-size: 1.1em;
+      color: var(--color-text);
+    }
+    
+    /* Data table styling */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5em 0;
+      font-size: 0.95em;
+      background: var(--color-bg-elevated);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+    }
+    .data-table th {
+      background: var(--color-bg-hover);
+      color: var(--color-text);
+      padding: 0.875em 1em;
+      text-align: left;
+      font-weight: 600;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .data-table td {
+      padding: 0.875em 1em;
+      color: var(--color-text-secondary);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .data-table tr:last-child td {
+      border-bottom: none;
+    }
+    .data-table tr:nth-child(even) {
+      background: var(--color-bg-card);
+    }
+    .data-table strong {
+      color: var(--color-text);
+    }
+    
+    /* Formula styling */
+    .formula {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 1em 1.25em;
+      margin: 1em 0;
+      font-family: var(--font-mono);
+      font-size: 1em;
+      color: var(--color-text);
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
@@ -17,7 +103,7 @@
     <div class="site">
       <div class="header-inner">
         <a href="index.html" class="brand">
-          <div class="brand-mark">S</div>
+          <div class="brand-mark"><img src="assets/MadeBySkows/skowsRaccoonHeadSOTD.png" alt="madebyskows" /></div>
           <div class="brand-text">
             <span class="brand-name">madebyskows</span>
             <span class="brand-tagline">Made by Skows LLC</span>
@@ -41,12 +127,10 @@
       <!-- Case Study Hero -->
       <section class="case-hero">
         <a href="portfolio.html" class="back-link">← Back to Portfolio</a>
-        <span class="tag">Idle Game · Unity</span>
+        <span class="tag">Idle Game · Progression Design · Systems Design</span>
         <h1>Cult of Coin</h1>
         <p class="case-intro">
-          A satirical idle clicker that indulges in mindless progression while poking fun at
-          capitalism, ritual, and the way people surrender agency to systems that promise
-          endless growth.
+          Prestige-Driven Idle Economy Systems Design Case Study
         </p>
       </section>
 
@@ -58,50 +142,33 @@
               <img src="assets/CultOfCoin/coc_Logo.png" alt="Cult of Coin logo">
             </figure>
             
-            <h2>Overview</h2>
+            <h2>Executive Summary</h2>
             <p>
-              <em>Cult of Coin</em> is a Unity-based idle game designed to be simple, compulsive,
-              and intentionally mindless. Players tap to generate coins, unlock followers that
-              automate income, and watch numbers grow larger and more abstract over time.
+              Cult of Coin is a mobile idle game designed around a single core problem:
+            </p>
+            <div class="callout">
+              <p><em>How do you make frequent resets feel optimal without making progress feel disposable?</em></p>
+            </div>
+            <p>
+              The game uses a two-layer economy built to support short active sessions, long idle 
+              accumulation, and repeated prestige over time. Coins function as volatile run currency, 
+              while Faith represents permanent meta progression. This separation allows individual runs 
+              to grow aggressively while preserving a strong sense of long-term advancement.
             </p>
             <p>
-              On the surface, it is a short-session idle game meant to be checked for a few
-              minutes, provide some small dopamine hits and jokes, and then be closed.
-              Underneath that surface, it uses satire, exaggerated systems, and religious
-              language to comment on how money and worship blur together in capitalist systems.
+              Within a run, Coins grow exponentially through a generator-driven economy. Generator costs 
+              scale exponentially per purchase, while income scales linearly per unit and multiplicatively 
+              through global bonuses. This structure creates accelerating growth curves that feel 
+              increasingly powerful over time.
             </p>
             <p>
-              This project was built as a fully shippable mobile game and as a way to explore
-              how players interact with compulsion loops, delegation, and progression systems
-              when the optimal play is often to stop actively playing.
+              Prestige is driven by a square-root conversion of total Coins earned into Faith. This 
+              curve rewards longer runs while introducing diminishing returns, creating a natural peak 
+              in Faith-per-hour efficiency. Players are encouraged—but not forced—to reset at regular 
+              intervals. The math itself defines the game's cadence.
             </p>
-
-            <h2>Design Goals</h2>
-            <ul>
-              <li>Create an idle loop that is instantly understandable and frictionless.</li>
-              <li>Lean into mindlessness as part of the intended player experience.</li>
-              <li>Use satire and flavor text to frame familiar idle mechanics.</li>
-              <li>Allow imbalance and runaway growth rather than enforcing perfect balance.</li>
-              <li>Ship a complete Unity game with ads, saves, and mobile-ready UX.</li>
-            </ul>
-
-            <h2>My Role</h2>
-            <p>
-              I designed and built the game solo, owning both design and implementation:
-            </p>
-            <ul>
-              <li>Core idle loop and progression structure</li>
-              <li>Compounding economy and multiplier systems</li>
-              <li>Edict and idol progression concepts</li>
-              <li>Mobile UX for short, repeatable play sessions</li>
-              <li>Unity implementation in C#, including AdMob integration</li>
-              <li>All tone, copy, and satirical flavor content</li>
-            </ul>
 
             <h2>Screenshots</h2>
-            <p>
-              A look at the main screens and systems in Cult of Coin.
-            </p>
             <div class="media-grid media-grid-4">
               <figure class="case-image">
                 <img src="assets/CultOfCoin/coc_MainScreen01.png" alt="Cult of Coin main gameplay screen">
@@ -121,131 +188,304 @@
               </figure>
             </div>
 
-            <h2>Core Loop & Progression</h2>
+            <h2>Design Goal</h2>
             <p>
-              The core loop is intentionally familiar:
+              Cult of Coin is a mobile idle game built around a simple question:
+            </p>
+            <div class="callout">
+              <p><em>Why should a player reset?</em></p>
+            </div>
+            <p>
+              Idle games live in a strange space. If resets are too weak, players feel stupid for using 
+              them and end up sitting on one run forever. If resets are too strong, every run feels 
+              disposable and nothing ever feels earned. Both cases break long-term engagement, just in 
+              different ways.
+            </p>
+            <p>
+              My goal was to design a prestige system where resets are always the smart thing to do, 
+              but never feel like throwing progress away. Every run should push the player forward, 
+              even if it only lasts a few minutes.
+            </p>
+            <p>
+              The rhythm I was aiming for:
+            </p>
+            <p style="text-align: center; font-weight: 500; margin: 1.5em 0;">
+              Log in → play actively for a few minutes → let it idle → come back later → reset → repeat
+            </p>
+            <p>
+              That loop is the heart of most successful idle games, but it only works if the economy 
+              quietly guides the player into it. In Cult of Coin, the entire progression system is 
+              tuned to make that cadence emerge naturally from the math, rather than being enforced 
+              through timers, energy systems, or daily quests.
+            </p>
+
+            <h2>Economy Structure</h2>
+            <p>
+              Cult of Coin uses a two-layer currency model designed to separate short-term progress 
+              from long-term growth:
             </p>
             <ul>
-              <li>Tap a central coin to generate currency.</li>
-              <li>Spend coins on followers that generate income passively.</li>
-              <li>Upgrade generators and unlock multipliers.</li>
-              <li>Ascend to reset progress in exchange for persistent bonuses.</li>
+              <li><strong>Coins</strong> are the run currency.</li>
+              <li><strong>Faith</strong> is the meta currency.</li>
             </ul>
             <p>
-              Each ascension accelerates future runs, encouraging short, ritualistic play
-              cycles where players “do their tasks,” watch numbers grow, and move on.
-              The optimal strategy increasingly becomes delegation rather than direct input.
+              Coins are earned through tapping and passive generators and are fully wiped on prestige. 
+              Faith is only earned when the player resets and is spent on permanent upgrades called Idols.
+            </p>
+            <figure class="chart-figure">
+              <img src="assets/CultOfCoin/CoC_GameplayLoop.png" alt="Cult of Coin gameplay loop diagram">
+              <figcaption>The core loop: Coins feed into Faith on prestige, Faith purchases Idols, Idols strengthen the next run.</figcaption>
+            </figure>
+            <p>
+              This separation is what makes frequent resets viable. Coins are allowed to be volatile 
+              and fast-growing because they do not represent the player's real progress. Faith, on the 
+              other hand, grows slowly and persists across runs, giving the player a clear sense of 
+              long-term advancement even as individual runs are wiped away.
             </p>
 
-            <h2>Satire, Compulsion, and Illusory Choice</h2>
+            <h2>Generator Backbone</h2>
             <p>
-              Many of <em>Cult of Coin</em>’s systems are intentionally framed as choices with
-              minimal long-term impact. Edicts, for example, allow players to make small
-              directional decisions during a run—but are ultimately overshadowed by large,
-              compounding idle income.
+              All idle income in Cult of Coin comes from generators. Generators are the primary driver 
+              of exponential growth within a run and are intentionally designed to overtake tapping as 
+              the dominant source of income after the early game.
             </p>
             <p>
-              This was not treated as a failure of the system, but as part of the satire.
-              The promise of “meaningful choice” exists, but the structure quietly rewards
-              submission to automation and scale instead.
+              Each generator purchase increases its cost exponentially:
             </p>
+            <div class="formula">
+              Cost(n) = BaseCost × 1.15<sup>n</sup>
+            </div>
             <p>
-              Over time, the game nudges players toward detachment: letting followers work,
-              trusting the system, and returning only to perform the next ritual reset.
-            </p>
-
-            <h2>Player Behavior & Design Observations</h2>
-            <p>
-              Designing <em>Cult of Coin</em> reinforced how quickly players internalize
-              compulsion loops that are simple and intuitive, even when the interactions
-              themselves are shallow.
+              This scaling rate was chosen to strike a balance between two competing needs:
             </p>
             <ul>
-              <li>Novelty wears off quickly—as expected in idle games.</li>
-              <li>Players default to automation as soon as it becomes efficient.</li>
-              <li>Small visual and textual feedback loops sustain engagement longer than
-                  mechanical depth alone.</li>
+              <li>Costs must rise fast enough to prevent trivial infinite scaling within a single run</li>
+              <li>Costs must rise slowly enough that players are almost always able to buy <em>something</em></li>
             </ul>
             <p>
-              Much of the satisfaction comes not from mastery, but from routine: checking in,
-              making a few upgrades, and leaving again.
+              At 1.15, prices increase meaningfully every few purchases without producing hard stalls. 
+              Players regularly face decisions between buying another unit now or saving for the next tier, 
+              rather than waiting long periods with no meaningful actions.
             </p>
 
-            <h2>Monetization as Design Constraint</h2>
+            <h2>Tier Efficiency</h2>
             <p>
-              Monetization was approached as both a practical requirement and a learning goal.
-              The game uses optional ads (such as doubling offline earnings) paired with a
-              paid option to remove ads entirely.
+              Higher tiers are more powerful but less efficient. This inefficiency gradient is intentional.
             </p>
             <p>
-              This structure mirrors many idle games the project draws inspiration from and
-              allowed me to gain hands-on experience integrating monetization systems into
-              Unity without blocking core progression or forcing purchases.
+              If higher tiers were both stronger <em>and</em> more efficient, the optimal strategy would 
+              always be to ignore earlier generators and save exclusively for the newest tier. That quickly 
+              collapses player choice and turns progression into a single solved path.
             </p>
-
-            <h2>Technical Notes</h2>
             <p>
-              The game is built in Unity using C#, with systems designed to scale quickly:
+              Instead, Cult of Coin creates a tension between:
             </p>
             <ul>
-              <li>Modular income generators and multipliers</li>
-              <li>Data-driven tuning for progression pacing</li>
-              <li>Save/load for persistent idle progress</li>
-              <li>AdMob integration for rewarded ads and ad removal</li>
+              <li>Buying efficient, lower-tier generators that scale well with multipliers</li>
+              <li>Saving for higher-tier generators that dramatically raise CPS but offer diminishing returns per unit cost</li>
             </ul>
             <p>
-              Implementing these overlapping systems highlighted how quickly small modifiers
-              compound, and how important clear structure becomes as complexity grows.
+              As a result, players are encouraged to build horizontally and vertically at the same time. 
+              Lower tiers remain relevant throughout a run, while higher tiers act as power spikes rather 
+              than strict replacements.
             </p>
 
-            <h2>Outcomes & Learnings</h2>
+            <h2>The Faith Curve</h2>
+            <p>
+              Faith is awarded when the player ascends, based on the total amount of Coins earned during 
+              the current run:
+            </p>
+            <div class="formula">
+              Faith = floor( √( Coins / 100,000,000 ) )
+            </div>
+            <p>
+              This means Faith does not increase continuously during play. It is only calculated at the 
+              moment of prestige, using the full run's earned value.
+            </p>
+            <figure class="chart-figure">
+              <img src="assets/CultOfCoin/CoC_FaithEarnedOnAscend.png" alt="Graph showing Faith earned based on coins collected">
+              <figcaption>Faith earned on ascension follows a square-root curve—rising fast early, then flattening.</figcaption>
+            </figure>
+            <p>
+              This is a square-root curve. It rises fast early, then flattens:
+            </p>
             <ul>
-              <li>Deepened my understanding of compounding systems and runaway growth.</li>
-              <li>Reinforced how design can shape player behavior without explicit instruction.</li>
-              <li>Provided hands-on experience shipping a mobile Unity project end-to-end.</li>
-              <li>Highlighted the tension between agency, automation, and engagement.</li>
+              <li>Coins grow exponentially.</li>
+              <li>Faith grows sub-linearly.</li>
             </ul>
+            <p>
+              That means longer runs always give more Faith, but less Faith per minute. This creates a 
+              natural peak in Faith/hour. That peak is what drives the game's reset rhythm.
+            </p>
 
-            <h2>Why This Project Matters</h2>
+            <h2>Why Square Root Works</h2>
             <p>
-              <em>Cult of Coin</em> is intentionally a small, silly game—but it represents an
-              important step in my development as a gameplay designer. It reflects a comfort
-              with systems, player psychology, and shipping real products, even when the
-              experience itself is meant to be disposable and light.
+              Choosing the prestige curve was one of the most important design decisions in Cult of Coin.
+            </p>
+            <figure class="chart-figure">
+              <img src="assets/CultOfCoin/CoC_ComparisonOfPrestigeCurves.png" alt="Comparison of linear, logarithmic, and square root prestige curves">
+              <figcaption>Comparing linear, logarithmic, and square root scaling for prestige rewards.</figcaption>
+            </figure>
+            <p>
+              A <strong>linear</strong> prestige formula, where Faith scales directly with Coins, heavily 
+              rewards marathon runs. Waiting longer is almost always optimal, and players are incentivized 
+              to avoid resetting for as long as possible. This undermines the core rhythm of an idle game 
+              built around frequent resets.
             </p>
             <p>
-              While later projects push toward deeper or more expressive systems, this one
-              grounded my understanding of how rules, incentives, and feedback loops shape
-              player behavior at scale.
+              A <strong>logarithmic</strong> prestige formula sits at the opposite extreme. While it strongly 
+              discourages long runs, it also flattens progression to the point where prestige rewards feel 
+              insignificant. The numbers move slowly, and resets begin to feel pointless rather than strategic.
             </p>
+            <p>
+              <strong>Square root</strong> scaling sits between these two extremes. It rewards longer runs by 
+              always granting more Faith for more Coins, but it does so with diminishing returns. Each 
+              additional unit of Faith requires disproportionately more Coins than the last.
+            </p>
+            <figure class="chart-figure">
+              <img src="assets/CultOfCoin/CoC_FaithEfficiencyOverTime.png" alt="Graph showing Faith efficiency over time">
+              <figcaption>Faith-per-hour peaks early in a run, encouraging regular prestiges over marathon sessions.</figcaption>
+            </figure>
+            <p>
+              This balance is what makes frequent prestige optimal without making it mandatory. Players who 
+              reset at the efficiency peak gain the most long-term progress, but players who choose to push 
+              a run longer are still rewarded. The system guides behavior without hard rules.
+            </p>
+            <p>
+              The result is a prestige system that feels like a choice, not a chore.
+            </p>
+
+            <h2>Meta-Progression (Idols)</h2>
+            <p>
+              Faith is spent on six permanent upgrades called Idols. Each Idol boosts a different part of 
+              the economy, including generator output, tap power, global income, crit behavior, and Faith 
+              gain itself.
+            </p>
+            <p>
+              Idol costs scale exponentially:
+            </p>
+            <div class="formula">
+              Cost = 10 × 1.5<sup>level</sup>
+            </div>
+            <p>
+              This steep scaling ensures that Idol upgrades feel meaningful and long-term. Early levels are 
+              attainable quickly, while later levels require multiple runs and careful investment.
+            </p>
+            <p>
+              One Idol directly increases Faith gain. This creates compounding progression across runs:
+            </p>
+            <p style="text-align: center; font-weight: 500; margin: 1.5em 0;">
+              More Faith earned per reset → more Idol upgrades → higher Coin generation → more Faith earned on the next reset
+            </p>
+            <p>
+              This feedback loop is the backbone of the game's long-term progression. Growth does not just 
+              happen within a single run; it accelerates across many runs as permanent multipliers stack.
+            </p>
+
+            <h2>Stability Systems</h2>
+            <p>
+              As multipliers stack, idle economies are at constant risk of collapsing into runaway builds 
+              where a single stat trivializes all other decisions. Cult of Coin uses soft caps to control 
+              this without invalidating player investment.
+            </p>
+            <ul>
+              <li><strong>Crit chance</strong> is capped at 50%. Any additional crit chance gained beyond 
+                  that cap is converted into crit damage. This ensures that crit-focused builds remain 
+                  viable while preventing guaranteed crits from overwhelming the economy.</li>
+              <li><strong>Cost reduction</strong> is capped at 20%. Any overflow beyond that point is 
+                  redirected into other bonuses rather than being wasted. This prevents costs from 
+                  approaching zero while still rewarding continued investment.</li>
+            </ul>
+            <p>
+              These caps are deliberately soft rather than hard. Players never hit a wall where an upgrade 
+              stops working entirely. Instead, excess value is redirected in a way that keeps the economy 
+              stable while preserving the feeling that every upgrade matters.
+            </p>
+
+            <h2>Player Behavior Over Time</h2>
+            <p>
+              The progression system is designed to gently guide the player through distinct behavioral 
+              phases as the economy scales:
+            </p>
+            <ul>
+              <li><strong>Early game:</strong> Play is active and click-driven. Tapping meaningfully 
+                  contributes to income, upgrades are frequent, and the player is directly engaged with 
+                  moment-to-moment actions.</li>
+              <li><strong>Mid-game:</strong> Generators begin to dominate income. Player focus shifts 
+                  toward optimization: choosing which generators to buy, when to invest in Edicts, and 
+                  whether to push efficiency or save for higher tiers.</li>
+              <li><strong>Late game:</strong> Attention moves almost entirely to prestige timing and Idol 
+                  investment. The most important questions are no longer "What should I buy next?" but 
+                  "When should I reset?" and "How should I invest my Faith?"</li>
+            </ul>
+            <p>
+              This shift from <em>doing the work</em> to <em>managing the system</em> is intentional. It 
+              mirrors the natural arc of many successful idle games, where player agency evolves from 
+              action to strategy. The math is tuned to support that transition organically, without 
+              explicit tutorials or forced milestones.
+            </p>
+
+            <h2>Why This System Holds Up</h2>
+            <p>
+              The progression system is built around opposing forces that keep the economy stable over time:
+            </p>
+            <ul>
+              <li><strong>Exponential run growth</strong> creates excitement. Numbers rise quickly, especially 
+                  later in a run, and players are rewarded with a strong sense of momentum and payoff.</li>
+              <li><strong>Square-root prestige scaling</strong> introduces restraint. While longer runs always 
+                  grant more Faith, the diminishing returns ensure that progress eventually slows from a 
+                  meta-progression perspective, encouraging resets without forcing them.</li>
+              <li><strong>Steep meta-progression costs</strong> create long-term goals. Idol upgrades remain 
+                  meaningful across dozens of runs, and players are never allowed to trivialize the system 
+                  through a single early investment.</li>
+              <li><strong>Soft caps</strong> prevent collapse. Rather than hard limits that invalidate 
+                  upgrades, overflow mechanics redirect excess value in a way that preserves both balance 
+                  and player satisfaction.</li>
+            </ul>
+            <p>
+              None of these systems works in isolation. Each one pushes against the others. Exponential 
+              growth demands restraint. Prestige demands compounding. Compounding demands stability. That 
+              tension is intentional, and it is what allows the economy to remain engaging and readable 
+              across many resets.
+            </p>
+            <p>
+              The result is a progression system that supports short sessions, long-term play, and frequent 
+              iteration without breaking under its own weight.
+            </p>
+
           </div>
-          
+
           <aside class="case-sidebar">
             <div class="case-meta">
               <h3>Project Details</h3>
               <dl>
                 <dt>Role</dt>
-                <dd>Designer & Developer</dd>
+                <dd>Designer & Developer (Solo)</dd>
                 <dt>Timeline</dt>
                 <dd>Oct 2025 – Jan 2026</dd>
-                <dt>Team Size</dt>
-                <dd>Solo</dd>
                 <dt>Platform</dt>
-                <dd>Mobile (Android, iOS planned)</dd>
+                <dd>iOS, Android</dd>
                 <dt>Engine</dt>
-                <dd>Unity</dd>
+                <dd>Unity / C#</dd>
               </dl>
             </div>
             
             <div class="case-meta">
-              <h3>Skills Used</h3>
+              <h3>Focus Areas</h3>
               <ul class="skill-tags">
-                <li>Gameplay Systems Design</li>
-                <li>Compulsion & Progression Design</li>
-                <li>Mobile UX</li>
-                <li>Unity (C#)</li>
-                <li>Monetization Integration</li>
-                <li>Tone & Satirical Writing</li>
+                <li>Progression Design</li>
+                <li>Prestige Systems</li>
+                <li>Economy Balancing</li>
+                <li>Idle Game Mechanics</li>
+                <li>Mathematical Modeling</li>
+                <li>Long-Term Pacing</li>
+              </ul>
+            </div>
+            
+            <div class="case-meta">
+              <h3>Links</h3>
+              <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 0.5em;"><a href="product-cult-of-coin.html">Product Page</a></li>
               </ul>
             </div>
           </aside>
@@ -254,8 +494,12 @@
 
       <!-- CTA -->
       <section class="section cta-section text-center">
-        <h2>Interested in this project?</h2>
-        <p>Get in touch to talk about systems design, idle games, or shipping mobile projects.</p>
+        <h2>Want to Talk Progression Design?</h2>
+        <p>
+          I enjoy digging into the math behind what makes games feel rewarding. 
+          If you're working on progression systems, idle mechanics, or long-term 
+          balance—I'd love to chat.
+        </p>
         <a href="contact.html" class="btn btn-primary">Contact Me</a>
       </section>
 
