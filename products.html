@@ -3,33 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products — madebyskows</title>
-  <meta name="description" content="Games and apps by Made by Skows LLC.">
-    <link rel="icon" type="image/png" href="assets/MadeBySkows/skowsRaccoonHeadSOTD.png">
+  <title>Products | madebyskows</title>
+  <meta name="description" content="Games and apps by Made by Skows LLC, including Song of the Day on iOS and Android and Cult of Coin on Android.">
+  <link rel="canonical" href="https://madebyskows.com/products.html">
+  <meta property="og:title" content="Products | madebyskows">
+  <meta property="og:description" content="Download Song of the Day, play Cult of Coin, and explore other Made by Skows projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://madebyskows.com/products.html">
+  <meta property="og:image" content="https://madebyskows.com/assets/SongOfTheDay/sotd_logo.png">
+  <link rel="icon" type="image/png" href="assets/MadeBySkows/skowsRaccoonHeadSOTD.png">
   <link rel="apple-touch-icon" href="assets/MadeBySkows/skowsRaccoonHeadSOTD.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="products-index">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header -->
   <header class="site-header">
     <div class="site">
       <div class="header-inner">
         <a href="index.html" class="brand">
-          <div class="brand-mark"><img src="assets/MadeBySkows/skowsRaccoonHeadSOTD.png" alt="madebyskows" /></div>
+          <div class="brand-mark"><img src="assets/MadeBySkows/skowsRaccoonHeadSOTD.png" alt="madebyskows"></div>
           <div class="brand-text">
             <span class="brand-name">madebyskows</span>
             <span class="brand-tagline">Made by Skows LLC</span>
           </div>
         </a>
-        
+
         <nav class="site-nav" aria-label="Main navigation">
           <a href="index.html">Home</a>
+          <a href="portfolio.html">Work</a>
           <a href="products.html" class="active">Products</a>
-          <a href="portfolio.html">Portfolio</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </nav>
@@ -37,61 +43,118 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <div class="site">
-      
-      <!-- Page Header -->
       <div class="page-header">
         <h1>Products</h1>
-        <p class="lead">Games and apps released or in development. Each product page contains details, screenshots, and store links.</p>
+        <p class="lead">
+          Apps and games you can download, play, or follow, with release status kept
+          separate from portfolio case-study work.
+        </p>
       </div>
 
-      <!-- Games -->
       <section class="section">
         <div class="section-header">
-          <h2>Games</h2>
-          <p>Available games, ordered by release date (newest first).</p>
+          <h2>Available Now</h2>
+          <p>Released mobile products from Made by Skows LLC.</p>
         </div>
 
         <div class="projects">
-          <!-- Cult of Coin -->
+          <article class="project-card featured">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-type">Social Music App</span>
+                <span class="status-chip">iOS & Android</span>
+              </div>
+              <h3 class="project-title">Song of the Day</h3>
+              <p class="project-description">
+                A cozy social music diary for sharing one song a day, reflecting on
+                your listening history, and staying connected with friends.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Music</span>
+                <span class="tag">Social</span>
+                <span class="tag">Daily Ritual</span>
+              </div>
+              <div class="store-links">
+                <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.madebyskows.songoftheday" target="_blank" rel="noopener" aria-label="Get Song of the Day on Google Play">
+                  <img src="assets/Google/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play">
+                </a>
+                <a class="store-badge" href="https://apps.apple.com/us/app/song-of-the-day-post-daily/id6756133268" target="_blank" rel="noopener" aria-label="Download Song of the Day on the App Store">
+                  <img src="assets/Apple/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
+                </a>
+              </div>
+              <div class="project-links">
+                <a href="product-song-of-the-day.html" class="project-link">View Product</a>
+                <a href="portfolio-song-of-the-day.html" class="project-link">Read Case Study</a>
+              </div>
+            </div>
+            <div class="project-thumbnail">
+              <img src="assets/SongOfTheDay/sotd_logo.png" alt="Song of the Day logo">
+            </div>
+          </article>
+
           <article class="project-card">
             <div class="project-content">
               <div class="project-meta">
                 <span class="project-type">Unity Mobile Game</span>
+                <span class="status-chip">Android</span>
               </div>
               <h3 class="project-title">Cult of Coin</h3>
-              <p class="project-description">A casual idle game about compulsion, progression, and letting systems
-                run themselves — with satire hiding just beneath the surface.</p>
+              <p class="project-description">
+                A silly, satirical idle clicker about worshipping money, overworking
+                your followers, and checking in for a few minutes to watch the numbers go up.
+              </p>
               <div class="project-tags">
-                <span class="tag">Unity</span>
                 <span class="tag">Idle</span>
+                <span class="tag">Satire</span>
                 <span class="tag">Android</span>
-                <span class="tag">iOS (Soon)</span>
               </div>
-              <a href="product-cult-of-coin.html" class="project-link">View Product</a>
+              <div class="store-links">
+                <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.madebyskows.cultofcoin" target="_blank" rel="noopener" aria-label="Get Cult of Coin on Google Play">
+                  <img src="assets/Google/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play">
+                </a>
+              </div>
+              <div class="project-links">
+                <a href="product-cult-of-coin.html" class="project-link">View Product</a>
+                <a href="portfolio-cult-of-coin.html" class="project-link">Read Case Study</a>
+              </div>
             </div>
             <div class="project-thumbnail">
               <img src="assets/CultOfCoin/coc_Logo.png" alt="Cult of Coin logo">
             </div>
           </article>
+        </div>
+      </section>
 
-          <!-- Past the End -->
+      <section class="section">
+        <div class="section-header">
+          <h2>Playable Build</h2>
+          <p>A released slice of a larger project that is currently on pause.</p>
+        </div>
+
+        <div class="projects">
           <article class="project-card">
             <div class="project-content">
               <div class="project-meta">
                 <span class="project-type">Narrative JRPG</span>
+                <span class="status-chip">Playable on itch.io</span>
               </div>
               <h3 class="project-title">Past the End</h3>
-              <p class="project-description">An episodic narrative JRPG driven by handcrafted encounters,
-                exploration-based progression, and philosophy expressed through play.</p>
+              <p class="project-description">
+                A story-driven 2D Adventure RPG opening arc with handcrafted battles,
+                dense exploration, and side quests that leave marks on the world.
+              </p>
               <div class="project-tags">
-                <span class="tag">JRPG</span>
-                <span class="tag">Narrative</span>
                 <span class="tag">PC</span>
                 <span class="tag">itch.io</span>
+                <span class="tag">On Pause</span>
               </div>
-              <a href="product-past-the-end.html" class="project-link">View Product</a>
+              <div class="project-links">
+                <a href="https://studiodreamrs.itch.io/past-the-end" target="_blank" rel="noopener noreferrer" class="project-link">Play on itch.io</a>
+                <a href="product-past-the-end.html" class="project-link">View Product</a>
+                <a href="portfolio-past-the-end.html" class="project-link">Read Case Study</a>
+              </div>
             </div>
             <div class="project-thumbnail">
               <img src="assets/PastTheEnd/pasttheend_Logo.png" alt="Past the End logo">
@@ -99,39 +162,6 @@
           </article>
         </div>
       </section>
-
-      <!-- Apps -->
-      <section class="section">
-        <div class="section-header">
-          <h2>Apps</h2>
-          <p>Available apps, ordered by release date (newest first).</p>
-        </div>
-
-        <div class="projects">
-          <!-- Song of the Day -->
-          <article class="project-card">
-            <div class="project-content">
-              <div class="project-meta">
-                <span class="project-type">Mobile App</span>
-              </div>
-              <h3 class="project-title">Song of the Day</h3>
-              <p class="project-description">A cozy social music diary for sharing one song a day, reflecting on
-                your listening habits, and staying softly connected with friends.</p>
-              <div class="project-tags">
-                <span class="tag">Android</span>
-                <span class="tag">iOS</span>
-                <span class="tag">Social</span>
-                <span class="tag">Music</span>
-              </div>
-              <a href="product-song-of-the-day.html" class="project-link">View Product</a>
-            </div>
-            <div class="project-thumbnail">
-              <img src="assets/SongOfTheDay/sotd_logo.png" alt="Song of the Day logo">
-            </div>
-          </article>
-        </div>
-      </section>
-
     </div>
   </main>
 
@@ -139,10 +169,16 @@
   <footer class="site-footer">
     <div class="site">
       <div class="footer-inner">
-        <p class="footer-copyright">© <span id="year"></span> Made by Skows LLC. All rights reserved.</p>
-        <nav class="footer-links">
-          <a href="legal.html">Legal</a>
+        <div>
+          <p class="footer-brand">Made by Skows LLC</p>
+          <p class="footer-copyright">&copy; <span id="year"></span> Made by Skows LLC. All rights reserved.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="portfolio.html">Work</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
+          <a href="legal.html">Legal</a>
         </nav>
       </div>
     </div>

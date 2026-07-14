@@ -4,32 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Song of the Day | madebyskows</title>
-  <meta name="description" content="Song of the Day – a cozy, low-pressure social app where you share one song a day with friends.">
-    <link rel="icon" type="image/png" href="assets/MadeBySkows/skowsRaccoonHeadSOTD.png">
+  <meta name="description" content="Song of the Day is a low-pressure social music app where you share one song a day with friends. Available now on iOS and Android.">
+  <link rel="canonical" href="https://madebyskows.com/product-song-of-the-day.html">
+  <meta property="og:title" content="Song of the Day | madebyskows">
+  <meta property="og:description" content="Share one song a day, see what friends are listening to, and build a visual music history over time.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://madebyskows.com/product-song-of-the-day.html">
+  <meta property="og:image" content="https://madebyskows.com/assets/SongOfTheDay/sotd_logo.png">
+  <link rel="icon" type="image/png" href="assets/MadeBySkows/skowsRaccoonHeadSOTD.png">
   <link rel="apple-touch-icon" href="assets/MadeBySkows/skowsRaccoonHeadSOTD.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="product-page">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header -->
   <header class="site-header">
     <div class="site">
       <div class="header-inner">
         <a href="index.html" class="brand">
-          <div class="brand-mark"><img src="assets/MadeBySkows/skowsRaccoonHeadSOTD.png" alt="madebyskows" /></div>
+          <div class="brand-mark"><img src="assets/MadeBySkows/skowsRaccoonHeadSOTD.png" alt="madebyskows"></div>
           <div class="brand-text">
             <span class="brand-name">madebyskows</span>
             <span class="brand-tagline">Made by Skows LLC</span>
           </div>
         </a>
-        
+
         <nav class="site-nav" aria-label="Main navigation">
           <a href="index.html">Home</a>
+          <a href="portfolio.html">Work</a>
           <a href="products.html" class="active">Products</a>
-          <a href="portfolio.html">Portfolio</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </nav>
@@ -37,133 +43,146 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <div class="site">
-
-      <!-- Product Hero -->
       <section class="product-hero">
-        <a href="products.html" class="back-link">← All Products</a>
+        <a href="products.html" class="back-link">All Products</a>
         <div class="product-hero-content">
           <div class="product-hero-text">
-            <span class="tag">Android · iOS</span>
+            <span class="tag">Available on iOS & Android</span>
             <h1>Song of the Day</h1>
             <p class="lead">
-              A cozy, low-pressure social app where you share one song a day with friends.
+              A cozy, low-pressure social music app where you share one song a day
+              with friends.
             </p>
             <p class="lead">
-              <strong>What’s <em>your</em> song of the day?</strong>
+              Pick the track that fits the day, see what your friends chose, and
+              build a personal music history over time.
             </p>
-            <div class="hero-actions">
-              <a href="https://play.google.com/store/apps/details?id=com.madebyskows.songoftheday" target="_blank" rel="noopener"><img src="assets/Google/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play" style="height: 60px;"></a>
-              <a href="https://apps.apple.com/us/app/song-of-the-day-post-daily/id6756133268" target="_blank" rel="noopener"><img src="assets/Apple/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" style="height: 60px;"></a>
-              <a href="portfolio-song-of-the-day.html" class="btn btn-secondary">View Case Study</a>
+            <div class="store-links">
+              <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.madebyskows.songoftheday" target="_blank" rel="noopener" aria-label="Get Song of the Day on Google Play">
+                <img src="assets/Google/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play">
+              </a>
+              <a class="store-badge" href="https://apps.apple.com/us/app/song-of-the-day-post-daily/id6756133268" target="_blank" rel="noopener" aria-label="Download Song of the Day on the App Store">
+                <img src="assets/Apple/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
+              </a>
+              <a href="portfolio-song-of-the-day.html" class="btn btn-secondary">Read Case Study</a>
             </div>
           </div>
           <div class="product-hero-image">
             <img src="assets/SongOfTheDay/sotd_logo.png" alt="Song of the Day logo">
           </div>
         </div>
+        <div class="product-facts" aria-label="Song of the Day product details">
+          <div class="product-fact">
+            <span>Type</span>
+            <strong>Social music app</strong>
+          </div>
+          <div class="product-fact">
+            <span>Status</span>
+            <strong>Available now</strong>
+          </div>
+          <div class="product-fact">
+            <span>Platforms</span>
+            <strong>iOS and Android</strong>
+          </div>
+          <div class="product-fact">
+            <span>Focus</span>
+            <strong>Daily music sharing</strong>
+          </div>
+        </div>
       </section>
 
-      <!-- Features -->
       <section class="section">
         <h2>How It Works</h2>
         <div class="features">
           <div class="feature">
-            <div class="feature-icon">🎧</div>
-            <h3>One Song a Day</h3>
+            <div class="feature-icon">1</div>
+            <h3>Choose One Song</h3>
             <p>
-              Pick your favorite song once per day and post it.
-              No long captions, no big performance—just music.
+              Post one track per day. The limit keeps the choice small, clear,
+              and more personal than a constant feed.
             </p>
           </div>
           <div class="feature">
-            <div class="feature-icon">📅</div>
-            <h3>Your Music, Over Time</h3>
+            <div class="feature-icon">2</div>
+            <h3>See What Friends Chose</h3>
             <p>
-              Automatically build weekly and monthly calendars that show what you were
-              listening to at different moments in your life.
+              Check in on friends' daily songs, react lightly, and discover music
+              through people you know.
             </p>
           </div>
           <div class="feature">
-            <div class="feature-icon">👥</div>
-            <h3>Stay in Touch, Effortlessly</h3>
+            <div class="feature-icon">3</div>
+            <h3>Build a Music Calendar</h3>
             <p>
-              Follow friends, see their songs in a gentle feed, tap to like tracks you love,
-              and get notified when you pick the same songs or artists.
+              Your posts become weekly and monthly calendars that make your
+              listening history easy to revisit.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Screenshots -->
       <section class="section">
         <h2>Screenshots</h2>
         <div class="media-grid media-grid-4">
           <figure class="case-image">
-            <img src="assets/SongOfTheDay/sotd_HomeFeed.png" alt="Song of the Day home feed">
-            <figcaption>See what friends are listening to.</figcaption>
+            <img src="assets/SongOfTheDay/sotd_HomeFeed.png" alt="Song of the Day home feed showing friends' posts">
+            <figcaption>See friends' daily songs in a calm feed.</figcaption>
           </figure>
           <figure class="case-image">
-            <img src="assets/SongOfTheDay/sotd_Profile.png" alt="Song of the Day profile view">
+            <img src="assets/SongOfTheDay/sotd_Profile.png" alt="Song of the Day profile screen with recent songs">
             <figcaption>Your profile and recent songs.</figcaption>
           </figure>
           <figure class="case-image">
-            <img src="assets/SongOfTheDay/sotd_ProfileCalendar.png" alt="Song of the Day calendar view">
-            <figcaption>A calendar of your music over time.</figcaption>
+            <img src="assets/SongOfTheDay/sotd_ProfileCalendar.png" alt="Song of the Day calendar view filled with album artwork">
+            <figcaption>A visual calendar of your music over time.</figcaption>
           </figure>
           <figure class="case-image">
-            <img src="assets/SongOfTheDay/sotd_GenreStats.jpg" alt="Song of the Day genre statistics">
-            <figcaption>See your listening patterns.</figcaption>
+            <img src="assets/SongOfTheDay/sotd_GenreStats.jpg" alt="Song of the Day listening statistics by genre">
+            <figcaption>Listening patterns and genre stats.</figcaption>
           </figure>
         </div>
       </section>
 
-      <!-- About -->
       <section class="section">
         <div class="prose">
           <h2>About the App</h2>
           <p>
             <em>Song of the Day</em> is designed to feel like a small daily ritual.
-            You open the app, post your song, see what your friends chose,
-            and move on with your day.
+            You open the app, post your song, see what your friends chose, and move
+            on with your day.
           </p>
           <p>
-            There is a simple follow system and you can see who you’re connected with,
-            but follower counts are tucked away inside a connections screen instead of
-            being front and center. Likes exist as a light way to say “I heard this”
-            or “I like this,” not as a scoreboard to chase.
+            The app keeps social interaction lightweight. Reactions are a way to say
+            "I heard this" or "I like this," not a scoreboard to chase. The main value
+            comes from the daily choice and the archive it creates over time.
           </p>
           <p>
-            Over time, your songs turn into a visual archive—calendars and stats that
-            make it easy to remember what you were listening to during different
-            months, seasons, or phases of your life.
+            Over weeks and months, songs turn into a visual record of moods, seasons,
+            and memories, with album artwork making each period easy to scan and revisit.
           </p>
         </div>
       </section>
 
-      <!-- CTA -->
       <section class="section cta-section text-center">
-        <h2>A Softer Way to Share Music</h2>
-        <p>
-          Song of the Day is now available on Android and iOS.
-        </p>
-        <div class="hero-actions">
-          <a href="https://play.google.com/store/apps/details?id=com.madebyskows.songoftheday" target="_blank" rel="noopener"><img src="assets/Google/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play" style="height: 60px;"></a>
-          <a href="https://apps.apple.com/us/app/song-of-the-day-post-daily/id6756133268" target="_blank" rel="noopener"><img src="assets/Apple/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" style="height: 60px;"></a>
-          <a href="portfolio-song-of-the-day.html" class="btn btn-secondary">View Dev Case Study</a>
+        <h2>What is your song of the day?</h2>
+        <p>Song of the Day is available now on Google Play and the App Store.</p>
+        <div class="store-links center">
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.madebyskows.songoftheday" target="_blank" rel="noopener" aria-label="Get Song of the Day on Google Play">
+            <img src="assets/Google/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play">
+          </a>
+          <a class="store-badge" href="https://apps.apple.com/us/app/song-of-the-day-post-daily/id6756133268" target="_blank" rel="noopener" aria-label="Download Song of the Day on the App Store">
+            <img src="assets/Apple/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
+          </a>
         </div>
       </section>
 
-      <!-- Product-specific legal links -->
-      <section class="section">
-        <div class="site">
-          <div class="product-legal text-center">
-            <p class="small muted">Legal: <a href="legal-song-of-the-day-privacy.html">Privacy</a> · <a href="legal-song-of-the-day-terms.html">Terms</a> · <a href="legal-song-of-the-day-data-deletion.html">Data Deletion</a></p>
-          </div>
+      <section class="section product-legal-section">
+        <div class="product-legal text-center">
+          <p class="small muted">Legal: <a href="legal-song-of-the-day-privacy.html">Privacy</a> | <a href="legal-song-of-the-day-terms.html">Terms</a> | <a href="legal-song-of-the-day-data-deletion.html">Data Deletion</a></p>
         </div>
       </section>
-
     </div>
   </main>
 
@@ -171,10 +190,16 @@
   <footer class="site-footer">
     <div class="site">
       <div class="footer-inner">
-        <p class="footer-copyright">© <span id="year"></span> Made by Skows LLC. All rights reserved.</p>
-        <nav class="footer-links">
-          <a href="legal.html">Legal</a>
+        <div>
+          <p class="footer-brand">Made by Skows LLC</p>
+          <p class="footer-copyright">&copy; <span id="year"></span> Made by Skows LLC. All rights reserved.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="portfolio.html">Work</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
+          <a href="legal.html">Legal</a>
         </nav>
       </div>
     </div>

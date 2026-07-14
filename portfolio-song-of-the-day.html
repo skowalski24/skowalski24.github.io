@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Song of the Day – Case Study | madebyskows</title>
-  <meta name="description" content="Case study for Song of the Day, a low-pressure social music app built around a daily sharing ritual.">
-    <link rel="icon" type="image/png" href="assets/MadeBySkows/skowsRaccoonHeadSOTD.png">
+  <title>Song of the Day Case Study | madebyskows</title>
+  <meta name="description" content="Case study for Song of the Day, a shipped iOS and Android social music app designed around one meaningful daily post.">
+  <link rel="canonical" href="https://madebyskows.com/portfolio-song-of-the-day.html">
+  <meta property="og:title" content="Song of the Day Case Study | madebyskows">
+  <meta property="og:description" content="Designing a social music app around connection rather than performance.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://madebyskows.com/portfolio-song-of-the-day.html">
+  <meta property="og:image" content="https://madebyskows.com/assets/SongOfTheDay/sotd_ProfileCalendar.png">
+  <link rel="icon" type="image/png" href="assets/MadeBySkows/skowsRaccoonHeadSOTD.png">
   <link rel="apple-touch-icon" href="assets/MadeBySkows/skowsRaccoonHeadSOTD.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,23 +19,23 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header -->
   <header class="site-header">
     <div class="site">
       <div class="header-inner">
         <a href="index.html" class="brand">
-          <div class="brand-mark"><img src="assets/MadeBySkows/skowsRaccoonHeadSOTD.png" alt="madebyskows" /></div>
+          <div class="brand-mark"><img src="assets/MadeBySkows/skowsRaccoonHeadSOTD.png" alt="madebyskows"></div>
           <div class="brand-text">
             <span class="brand-name">madebyskows</span>
             <span class="brand-tagline">Made by Skows LLC</span>
           </div>
         </a>
-        
+
         <nav class="site-nav" aria-label="Main navigation">
           <a href="index.html">Home</a>
+          <a href="portfolio.html" class="active">Work</a>
           <a href="products.html">Products</a>
-          <a href="portfolio.html" class="active">Portfolio</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </nav>
@@ -37,21 +43,26 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <div class="site">
-      
-      <!-- Case Study Hero -->
       <section class="case-hero">
-        <a href="portfolio.html" class="back-link">← Back to Portfolio</a>
-        <span class="tag">Android · iOS (Soon) · Expo · Firebase</span>
+        <a href="portfolio.html" class="back-link">Back to Work</a>
+        <span class="tag">Shipped - iOS & Android - Expo / React Native - Firebase</span>
         <h1>Song of the Day</h1>
         <p class="case-intro">
-          A low-pressure social music app built around a single daily ritual:
-          sharing one song with friends.
+          Designing a social music app around connection rather than performance.
         </p>
+        <div class="store-links">
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.madebyskows.songoftheday" target="_blank" rel="noopener" aria-label="Get Song of the Day on Google Play">
+            <img src="assets/Google/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play">
+          </a>
+          <a class="store-badge" href="https://apps.apple.com/us/app/song-of-the-day-post-daily/id6756133268" target="_blank" rel="noopener" aria-label="Download Song of the Day on the App Store">
+            <img src="assets/Apple/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store">
+          </a>
+          <a href="product-song-of-the-day.html" class="btn btn-secondary">View Product</a>
+        </div>
       </section>
 
-      <!-- Case Study Content -->
       <section class="section">
         <div class="case-grid">
           <div class="case-main">
@@ -59,139 +70,209 @@
               <img src="assets/SongOfTheDay/sotd_logo.png" alt="Song of the Day logo">
             </figure>
 
-            <h2>Overview</h2>
+            <h2>Executive Summary</h2>
             <p>
-              <em>Song of the Day</em> is a mobile app designed around constraint.
-              Instead of constant posting or endless feeds, users share exactly
-              one song per day and see what their friends chose.
+              <em>Song of the Day</em> is a social music diary built around a
+              simple daily ritual: choose one song, share it with friends, and
+              slowly create a record of what you were listening to over time.
             </p>
             <p>
-              The goal was to create a calm, repeatable ritual that makes music
-              feel social again without turning it into a performance. Over time,
-              those small daily moments become personal archives—calendars that
-              reflect moods, phases of life, and shared experiences.
+              I designed and developed the app independently, taking it from early
+              concept through interface design, social-system decisions, backend
+              implementation, mobile testing, and release on iOS and Android.
+            </p>
+            <p>
+              The central design challenge was not simply how to let people share
+              music. It was how to encourage connection without recreating the
+              pressure, competition, and endless engagement patterns of traditional
+              social platforms.
+            </p>
+
+            <h2>The Design Question</h2>
+            <div class="callout">
+              <p><em>How can a social app encourage connection without encouraging performance?</em></p>
+            </div>
+            <p>
+              Many social products reward frequent posting, audience growth, public
+              metrics, and continuous engagement. Those patterns can be useful for
+              discovery, but they can also make sharing feel like a small performance.
+            </p>
+            <p>
+              Song of the Day explores a narrower alternative: a daily ritual with a
+              clear beginning and end. The app should let someone post, check in on
+              friends, react lightly, and leave without feeling behind.
             </p>
 
             <h2>Screenshots</h2>
             <div class="media-grid media-grid-4">
               <figure class="case-image">
-                <img src="assets/SongOfTheDay/sotd_HomeFeed.png" alt="Song of the Day home feed">
-                <figcaption>See what friends are listening to.</figcaption>
+                <img src="assets/SongOfTheDay/sotd_HomeFeed.png" alt="Song of the Day home feed showing friends' daily songs">
+                <figcaption>Friends' daily songs appear in a simple chronological feed.</figcaption>
               </figure>
               <figure class="case-image">
-                <img src="assets/SongOfTheDay/sotd_Profile.png" alt="Song of the Day profile view">
-                <figcaption>Your profile and recent songs.</figcaption>
+                <img src="assets/SongOfTheDay/sotd_Profile.png" alt="Song of the Day profile screen with recent songs">
+                <figcaption>Profiles foreground recent songs and personal listening history.</figcaption>
               </figure>
               <figure class="case-image">
-                <img src="assets/SongOfTheDay/sotd_ProfileCalendar.png" alt="Song of the Day calendar view">
-                <figcaption>A calendar of your music over time.</figcaption>
+                <img src="assets/SongOfTheDay/sotd_ProfileCalendar.png" alt="Song of the Day calendar with album artwork for daily posts">
+                <figcaption>The calendar turns daily choices into a visual archive.</figcaption>
               </figure>
               <figure class="case-image">
-                <img src="assets/SongOfTheDay/sotd_Explore.png" alt="Song of the Day explore screen">
-                <figcaption>Discover new people and music.</figcaption>
+                <img src="assets/SongOfTheDay/sotd_Explore.png" alt="Song of the Day explore screen for finding music and people">
+                <figcaption>Discovery supports the ritual without replacing streaming services.</figcaption>
               </figure>
             </div>
 
-            <h2>The Design Problem</h2>
+            <h2>Core Design Principles</h2>
+            <div class="principle-grid">
+              <div class="principle">
+                <h3>One meaningful action</h3>
+                <p>
+                  Users choose one song per day. The limitation turns posting into
+                  a small decision rather than a content-production task.
+                </p>
+              </div>
+              <div class="principle">
+                <h3>Reflection over accumulation</h3>
+                <p>
+                  The value of a post grows over time as daily songs become a
+                  personal calendar and listening history.
+                </p>
+              </div>
+              <div class="principle">
+                <h3>Connection over audience</h3>
+                <p>
+                  Social interactions should feel reciprocal and personal rather
+                  than organized around visible popularity.
+                </p>
+              </div>
+              <div class="principle">
+                <h3>A natural stopping point</h3>
+                <p>
+                  The experience should let people post, check friends' songs, and
+                  leave without feeling that they failed to keep up.
+                </p>
+              </div>
+            </div>
+
+            <h2>Core Loop</h2>
             <p>
-              Most social platforms incentivize frequency, visibility, and competition.
-              Music apps, meanwhile, can feel like infinite scroll with no reflection.
+              The loop is intentionally small and repeatable. Each step supports a
+              quick daily check-in while still building long-term personal value.
+            </p>
+            <ol class="loop-list" aria-label="Song of the Day core loop">
+              <li>Choose a song</li>
+              <li>Share it</li>
+              <li>See friends' songs</li>
+              <li>React or listen</li>
+              <li>Build a music history</li>
+              <li>Return tomorrow</li>
+            </ol>
+
+            <h2>Key Design Decisions</h2>
+
+            <h3>Limiting posts to one song per day</h3>
+            <p>
+              The one-song constraint is the product's main design lever. It lowers
+              posting pressure, gives each choice more meaning, and prevents the app
+              from becoming another place to dump every track someone hears.
             </p>
             <p>
-              I wanted to explore the opposite question: <strong>What happens when
-              social sharing is limited, intentional, and quiet?</strong> Could a
-              single, simple constraint make connection feel easier instead of heavier?
+              The tradeoff is obvious: users cannot share everything. I accepted that
+              because the limitation is the point. Scarcity makes the daily choice
+              easier to understand and more interesting to revisit.
             </p>
 
-            <h2>My Role</h2>
+            <h3>Turning posts into a calendar</h3>
             <p>
-              Song of the Day is an end-to-end solo project. I was responsible for:
+              A feed is useful in the moment, but it loses value quickly. The calendar
+              makes the app useful after the day has passed. Album artwork gives each
+              month a visual texture, making memory and mood scannable.
             </p>
-            <ul>
-              <li>Product concept and feature definition</li>
-              <li>UX and interaction design</li>
-              <li>Frontend development (Expo / React Native)</li>
-              <li>Backend architecture (Firebase Auth, Firestore, Storage)</li>
-              <li>Privacy design, security rules, and data modeling</li>
-            </ul>
+            <figure class="case-image case-image-compact">
+              <img src="assets/SongOfTheDay/sotd_ProfileCalendar.png" alt="Song of the Day monthly music calendar filled with album covers">
+              <figcaption>Calendar posts turn daily choices into a lasting personal archive.</figcaption>
+            </figure>
 
-            <h2>Core Experience & Systems</h2>
+            <h3>Designing lightweight social interaction</h3>
             <p>
-              The core loop is intentionally simple:
+              The app uses a lightweight connection model instead of making public
+              follower metrics the center of the experience. Reactions exist as
+              acknowledgment, not as a high-score system.
             </p>
-            <ul>
-              <li>Once per day, post a single song.</li>
-              <li>View friends’ daily songs in a clean, chronological feed.</li>
-              <li>Watch weekly and monthly calendars fill in automatically.</li>
-              <li>Get notifications when you and a friend share the same song or artist.</li>
-            </ul>
             <p>
-              This structure removes pressure to constantly post while still encouraging
-              habitual engagement. Users return not for novelty, but for continuity.
+              That design keeps the focus on the song and the person who shared it.
+              The social layer supports discovery and conversation, but the app does
+              not need an endless feed or a visible popularity contest to work.
             </p>
 
-            <h2>Designing for Calm Social Connection</h2>
+            <h3>Music discovery without replacing streaming services</h3>
             <p>
-              Song of the Day includes familiar social mechanics—likes, follows, and
-              “friends” (mutual follows)—but uses them gently instead of competitively.
-            </p>
-            <ul>
-              <li>Likes are lightweight reactions, not a public scoreboard.</li>
-              <li>Follower and following counts are tucked away inside a Connections view,
-                  not surfaced as a primary status metric.</li>
-              <li>“Friends” exist mainly to power coincidences and notifications, not clout.</li>
-            </ul>
-            <p>
-              The intent is to support social connection and self-expression without
-              pushing users toward performance or comparison.
+              Song of the Day is not trying to become a streaming platform. Search,
+              song metadata, previews where available, and external music links are
+              there to help users choose and recognize songs, then continue listening
+              in the services they already use.
             </p>
 
-            <h2>Privacy, Trust, and Scalable Architecture</h2>
+            <h3>Designing around privacy and account deletion</h3>
             <p>
-              Because this is a social app, privacy was treated as a first-class design
-              constraint. Visibility of data is limited by default, and users have clear
-              expectations of who can see what.
+              Because this is a social app, trust had to be part of the product
+              design. The app includes account systems, scoped user data, and a
+              product-specific data deletion flow documented on the site.
             </p>
             <p>
-              Under the hood, the app uses a scalable Firebase architecture:
-            </p>
-            <ul>
-              <li>Firestore data models structured around users, posts, and connections.</li>
-              <li>Strictly scoped security rules to protect user data.</li>
-              <li>Support for growth in user count and social graph size without major
-                  structural changes.</li>
-            </ul>
-            <p>
-              Designing, testing, and validating these rules was one of the most challenging—
-              and most educational—parts of the project, especially as my first serious
-              backend experience.
+              That legal and support surface is less glamorous than screenshots, but
+              it is part of shipping a real product: users need to know what happens
+              to their data and how to leave cleanly.
             </p>
 
-            <h2>Technical Challenges & Growth</h2>
+            <h2>Implementation Ownership</h2>
             <p>
-              Song of the Day was my first project built with Expo, React Native, Firebase,
-              and GitHub in a production-minded way. Several systems required significant
-              iteration:
+              Song of the Day was an end-to-end solo project. I handled product
+              concept, feature definition, mobile UI implementation, Firebase data
+              modeling, authentication, security rules, testing, release preparation,
+              and store deployment.
             </p>
             <ul>
-              <li>The friend system evolved from a pure follow model to a hybrid
-                  follow/friend structure to support coincidences and notifications.</li>
-              <li>Legacy code and racing logic from early prototypes had to be untangled
-                  and refactored to keep behavior predictable.</li>
-              <li>Deep links, Apple Music metadata, and push notifications all had to fit
-                  together cleanly in the overall UX.</li>
+              <li>Built the app with Expo / React Native for iOS and Android.</li>
+              <li>Used Firebase for authentication, database behavior, and backend data.</li>
+              <li>Designed social and archive features around a daily posting constraint.</li>
+              <li>Prepared product, privacy, terms, and data-deletion pages for release.</li>
+              <li>Shipped the app through Google Play and the Apple App Store.</li>
             </ul>
+
+            <h2>Technical Challenges</h2>
             <p>
-              The result is a calm user experience sitting on top of a more complex,
-              scalable social back end.
+              The hardest parts were not single screens; they were the connections
+              between systems. Search, posting rules, friend/connection behavior,
+              notifications, profiles, calendars, privacy expectations, and backend
+              security all had to agree with the same product promise.
+            </p>
+            <p>
+              Early prototypes created legacy assumptions that later had to be
+              untangled. I refactored around clearer data models and more predictable
+              behavior so the app could be easier to maintain after launch.
+            </p>
+
+            <h2>What I Learned</h2>
+            <p>
+              Shipping Song of the Day changed the design questions. Once an app is
+              public, polish is not just visual. It includes onboarding, store copy,
+              privacy language, edge cases, error handling, and whether the core loop
+              still feels understandable when someone uses it without explanation.
+            </p>
+            <p>
+              The project also clarified what I enjoy most: designing constraints
+              that shape behavior, then building enough of the product myself to see
+              whether those ideas survive real use.
             </p>
 
             <h2>Project Status</h2>
             <p>
-              Song of the Day is now available on Android via Google Play, with 
-              an iOS release coming soon.
+              Song of the Day is shipped and available now on iOS and Android.
+              I continue to treat it as an active product and a flagship example of
+              my product design, mobile UX, social systems, and implementation work.
             </p>
-
           </div>
 
           <aside class="case-sidebar">
@@ -199,52 +280,72 @@
               <h3>Project Details</h3>
               <dl>
                 <dt>Role</dt>
-                <dd>Designer & Developer</dd>
-                <dt>Timeline</dt>
-                <dd>Nov 2025 – Ongoing</dd>
+                <dd>Solo Designer & Developer</dd>
+                <dt>Status</dt>
+                <dd>Shipped</dd>
                 <dt>Platform</dt>
-                <dd>iOS, Android</dd>
-                <dt>Tech</dt>
-                <dd>Expo, React Native, Firebase</dd>
+                <dd>iOS and Android</dd>
+                <dt>Tools</dt>
+                <dd>Expo / React Native, Firebase</dd>
+                <dt>Focus</dt>
+                <dd>Product Design, Mobile UX, Social Systems, Interaction Design</dd>
               </dl>
             </div>
-            
+
             <div class="case-meta">
               <h3>Skills</h3>
               <ul class="skill-tags">
                 <li>Product Design</li>
-                <li>UX & Interaction Design</li>
+                <li>Mobile UX</li>
+                <li>Interaction Design</li>
                 <li>Social Systems</li>
                 <li>Privacy & Data Design</li>
-                <li>Scalable Architecture</li>
-                <li>Mobile Development</li>
+                <li>React Native</li>
+                <li>Firebase</li>
+                <li>Store Release</li>
+              </ul>
+            </div>
+
+            <div class="case-meta">
+              <h3>Links</h3>
+              <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 0.5em;"><a href="product-song-of-the-day.html">View Product</a></li>
+                <li style="margin-bottom: 0.5em;"><a href="https://play.google.com/store/apps/details?id=com.madebyskows.songoftheday" target="_blank" rel="noopener">Google Play</a></li>
+                <li style="margin-bottom: 0.5em;"><a href="https://apps.apple.com/us/app/song-of-the-day-post-daily/id6756133268" target="_blank" rel="noopener">App Store</a></li>
               </ul>
             </div>
           </aside>
         </div>
       </section>
 
-      <!-- CTA -->
       <section class="section cta-section text-center">
-        <h2>Want to Learn More?</h2>
+        <h2>Want to talk product design or mobile UX?</h2>
         <p>
-          If you’re interested in calm social design, mobile systems, or lightweight
-          retention patterns, I’d love to talk.
+          I am interested in social systems, calm product design, mobile UX, and
+          projects where constraints shape behavior in useful ways.
         </p>
-        <a href="contact.html" class="btn btn-primary">Contact Me</a>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary">Contact Me</a>
+          <a href="product-song-of-the-day.html" class="btn btn-secondary">View Product</a>
+        </div>
       </section>
-
     </div>
   </main>
 
-   <!-- Footer -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="site">
       <div class="footer-inner">
-        <p class="footer-copyright">© <span id="year"></span> Made by Skows LLC. All rights reserved.</p>
-        <nav class="footer-links">
-          <a href="legal.html">Legal</a>
+        <div>
+          <p class="footer-brand">Made by Skows LLC</p>
+          <p class="footer-copyright">&copy; <span id="year"></span> Made by Skows LLC. All rights reserved.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="portfolio.html">Work</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
+          <a href="legal.html">Legal</a>
         </nav>
       </div>
     </div>

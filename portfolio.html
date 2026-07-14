@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio — madebyskows</title>
-  <meta name="description" content="Portfolio of gameplay, systems, and narrative design work by madebyskows.">
-    <link rel="icon" type="image/png" href="assets/MadeBySkows/skowsRaccoonHeadSOTD.png">
+  <title>Selected Work | madebyskows</title>
+  <meta name="description" content="Selected work by Stephen &quot;Skows&quot; Kowalski: shipped mobile products, in-development games, focused prototypes, and collaborations.">
+  <link rel="canonical" href="https://madebyskows.com/portfolio.html">
+  <meta property="og:title" content="Selected Work | madebyskows">
+  <meta property="og:description" content="Shipped apps, Android games, prototypes, and case studies focused on systems, interaction, UX, and progression.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://madebyskows.com/portfolio.html">
+  <meta property="og:image" content="https://madebyskows.com/assets/SongOfTheDay/sotd_logo.png">
+  <link rel="icon" type="image/png" href="assets/MadeBySkows/skowsRaccoonHeadSOTD.png">
   <link rel="apple-touch-icon" href="assets/MadeBySkows/skowsRaccoonHeadSOTD.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,23 +19,23 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header -->
   <header class="site-header">
     <div class="site">
       <div class="header-inner">
         <a href="index.html" class="brand">
-          <div class="brand-mark"><img src="assets/MadeBySkows/skowsRaccoonHeadSOTD.png" alt="madebyskows" /></div>
+          <div class="brand-mark"><img src="assets/MadeBySkows/skowsRaccoonHeadSOTD.png" alt="madebyskows"></div>
           <div class="brand-text">
             <span class="brand-name">madebyskows</span>
             <span class="brand-tagline">Made by Skows LLC</span>
           </div>
         </a>
-        
+
         <nav class="site-nav" aria-label="Main navigation">
           <a href="index.html">Home</a>
+          <a href="portfolio.html" class="active">Work</a>
           <a href="products.html">Products</a>
-          <a href="portfolio.html" class="active">Portfolio</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </nav>
@@ -37,80 +43,76 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <div class="site">
-      
-      <!-- Page Header -->
       <div class="page-header">
-        <h1>Portfolio</h1>
+        <h1>Selected Work</h1>
         <p class="lead">
-          Systems-driven games, mobile apps, and prototypes focused on mechanics,
-          meaning, and scalable design.
+          Shipped products, in-development games, and focused prototypes exploring
+          systems, interaction, progression, and player behavior.
         </p>
       </div>
 
-      <!-- Flagship -->
       <section class="section">
         <div class="section-header">
-          <h2>Flagship</h2>
-          <p>Primary case study — the clearest snapshot of how I think about systems, narrative, and player agency.</p>
+          <h2>Shipped Work</h2>
+          <p>
+            Finished products are the clearest evidence of execution, so they come first.
+          </p>
         </div>
 
         <div class="projects">
-          <!-- Past the End (flagship) -->
-          <article class="project-card">
+          <article class="project-card featured">
             <div class="project-content">
               <div class="project-meta">
-                <span class="project-type">Flagship Case Study</span>
+                <span class="project-type">Mobile Social App</span>
+                <span class="status-chip">Shipped - iOS & Android</span>
               </div>
-              <h3 class="project-title">Past the End</h3>
+              <h3 class="project-title">Song of the Day</h3>
+              <p class="project-role">Solo Designer & Developer</p>
               <p class="project-description">
-                A narrative JRPG built around handcrafted encounters, exploration-driven
-                progression, and absurdist philosophy expressed through play. The main
-                story is fixed, but side stories, world state, and character responses
-                shift based on how you move through the world.
+                A low-pressure social music app built around one intentional daily post.
+                The case study focuses on mobile UX, social-system constraints, backend
+                ownership, and release on both major mobile stores.
               </p>
               <div class="project-tags">
-                <span class="tag">JRPG</span>
-                <span class="tag">Narrative Systems</span>
-                <span class="tag">Encounter Design</span>
+                <span class="tag">Product Design</span>
+                <span class="tag">Mobile UX</span>
+                <span class="tag">Social Systems</span>
+                <span class="tag">Expo / Firebase</span>
               </div>
-              <a href="portfolio-past-the-end.html" class="project-link">View Case Study</a>
+              <div class="project-links">
+                <a href="portfolio-song-of-the-day.html" class="project-link">Read Case Study</a>
+                <a href="product-song-of-the-day.html" class="project-link">View Product</a>
+              </div>
             </div>
             <div class="project-thumbnail">
-              <img src="assets/PastTheEnd/pasttheend_Logo.png" alt="Past the End logo">
+              <img src="assets/SongOfTheDay/sotd_logo.png" alt="Song of the Day logo">
             </div>
           </article>
-        </div>
-      </section>
 
-      <!-- Games -->
-      <section class="section">
-        <div class="section-header">
-          <h2>Games</h2>
-          <p>Released and in-development games exploring progression, player behavior, and systems as commentary.</p>
-        </div>
-
-        <div class="projects">
-          <!-- Cult of Coin -->
           <article class="project-card">
             <div class="project-content">
               <div class="project-meta">
                 <span class="project-type">Unity Mobile Game</span>
+                <span class="status-chip">Shipped - Android</span>
               </div>
               <h3 class="project-title">Cult of Coin</h3>
+              <p class="project-role">Solo Designer & Developer</p>
               <p class="project-description">
-                A casual idle game built in Unity that plays with compulsion loops,
-                prestige systems, and the illusion of choice inside efficient economies.
-                On the surface it’s about making numbers go up; underneath, it quietly
-                satirizes the way people surrender agency to systems that reward repetition.
+                A casual idle game built in Unity that plays with prestige systems,
+                compulsion loops, and the illusion of choice inside efficient economies.
               </p>
               <div class="project-tags">
+                <span class="tag">Game Design</span>
+                <span class="tag">Systems Design</span>
+                <span class="tag">Economy Balance</span>
                 <span class="tag">Unity</span>
-                <span class="tag">Idle Systems</span>
-                <span class="tag">Economy Design</span>
               </div>
-              <a href="portfolio-cult-of-coin.html" class="project-link">View Case Study</a>
+              <div class="project-links">
+                <a href="portfolio-cult-of-coin.html" class="project-link">Read Case Study</a>
+                <a href="product-cult-of-coin.html" class="project-link">View Product</a>
+              </div>
             </div>
             <div class="project-thumbnail">
               <img src="assets/CultOfCoin/coc_Logo.png" alt="Cult of Coin logo">
@@ -119,66 +121,70 @@
         </div>
       </section>
 
-      <!-- Apps -->
       <section class="section">
         <div class="section-header">
-          <h2>Apps</h2>
-          <p>Mobile UX and product work centered on calm rituals, reflection, and scalable social systems.</p>
+          <h2>In Development & Paused Work</h2>
+          <p>
+            Larger work that shows design direction and process, labeled clearly when it is
+            not an actively shipped product.
+          </p>
         </div>
 
         <div class="projects">
-          <!-- Song of the Day -->
           <article class="project-card">
             <div class="project-content">
               <div class="project-meta">
-                <span class="project-type">Mobile App</span>
+                <span class="project-type">Narrative JRPG</span>
+                <span class="status-chip">On Pause</span>
               </div>
-              <h3 class="project-title">Song of the Day</h3>
+              <h3 class="project-title">Past the End</h3>
+              <p class="project-role">Designer, Systems Designer, Narrative Designer</p>
               <p class="project-description">
-                A cozy social music diary built with Expo and Firebase. Users share one
-                song per day, track their listening through monthly calendars, and stay
-                softly connected with friends. Designed as a low-pressure, privacy-aware,
-                and scalable social experience.
+                A narrative JRPG built around handcrafted encounters, exploration-driven
+                progression, and a world that reacts to side-story completion.
               </p>
               <div class="project-tags">
-                <span class="tag">Expo</span>
-                <span class="tag">Firebase</span>
-                <span class="tag">Social Systems</span>
+                <span class="tag">JRPG</span>
+                <span class="tag">Narrative Systems</span>
+                <span class="tag">Encounter Design</span>
               </div>
-              <a href="portfolio-song-of-the-day.html" class="project-link">View Case Study</a>
+              <div class="project-links">
+                <a href="portfolio-past-the-end.html" class="project-link">Read Case Study</a>
+                <a href="product-past-the-end.html" class="project-link">View Product</a>
+              </div>
             </div>
             <div class="project-thumbnail">
-              <img src="assets/SongOfTheDay/sotd_logo.png" alt="Song of the Day logo">
+              <img src="assets/PastTheEnd/pasttheend_Logo.png" alt="Past the End logo">
             </div>
           </article>
         </div>
       </section>
 
-      <!-- Prototypes -->
       <section class="section">
         <div class="section-header">
-          <h2>Prototypes</h2>
-          <p>Scoped experiments focused on learning, iteration, and systems exploration.</p>
+          <h2>Prototypes and Experiments</h2>
+          <p>
+            Scoped experiments built to test combat formats, resource pressure, party
+            composition, and mobile-friendly game structure.
+          </p>
         </div>
 
         <div class="projects">
-          <!-- Trailflip -->
           <article class="project-card">
             <div class="project-content">
               <div class="project-meta">
-                <span class="project-type">Prototype</span>
+                <span class="project-type">Mobile JRPG Prototype</span>
+                <span class="status-chip">Prototype</span>
               </div>
               <h3 class="project-title">Trailflip</h3>
               <p class="project-description">
                 A mobile-first resource management JRPG prototype where players manage
                 three core supplies and make choice-driven progress along a trail.
-                Built to explore short-run structure, lightweight JRPG combat, and
-                how simple resources can drive tense, meaningful decisions.
               </p>
               <div class="project-tags">
-                <span class="tag">Prototype</span>
                 <span class="tag">Resource Management</span>
                 <span class="tag">Mobile</span>
+                <span class="tag">JRPG Combat</span>
               </div>
               <a href="portfolio-trailflip.html" class="project-link">View Project</a>
             </div>
@@ -187,23 +193,21 @@
             </div>
           </article>
 
-          <!-- Emberrun -->
           <article class="project-card">
             <div class="project-content">
               <div class="project-meta">
-                <span class="project-type">Prototype</span>
+                <span class="project-type">Unity Combat Prototype</span>
+                <span class="status-chip">Prototype</span>
               </div>
               <h3 class="project-title">Emberrun</h3>
               <p class="project-description">
                 An early Unity prototype exploring team-based card combat, character
-                synergies, and deckbuilding driven by party composition. The project
-                informed how I scope future systems and how I approach character-driven,
-                modular design in larger projects.
+                synergies, and deckbuilding driven by party composition.
               </p>
               <div class="project-tags">
-                <span class="tag">Prototype</span>
                 <span class="tag">Deckbuilding</span>
                 <span class="tag">Team Synergy</span>
+                <span class="tag">Unity</span>
               </div>
               <a href="portfolio-emberrun.html" class="project-link">View Project</a>
             </div>
@@ -214,23 +218,25 @@
         </div>
       </section>
 
-      <!-- Other Projects -->
       <section class="section">
         <div class="section-header">
-          <h2>Other Projects</h2>
-          <p>Collaborations where I contributed in a supporting role (design-focused) — shared here as quick highlights and links.</p>
+          <h2>Collaborations</h2>
+          <p>
+            Supporting contributions where the work was shared with other creators or teams.
+          </p>
         </div>
 
         <div class="projects">
-          <!-- Chronicles of Ultiria -->
           <article class="project-card">
             <div class="project-content">
               <div class="project-meta">
                 <span class="project-type">Collaboration</span>
+                <span class="status-chip">External Link</span>
               </div>
               <h3 class="project-title">Chronicles of Ultiria</h3>
               <p class="project-description">
-                Co-creator contribution focused on game design, map design, and light narrative support.
+                Co-creator contribution focused on game design, map design, and light
+                narrative support.
               </p>
               <div class="project-tags">
                 <span class="tag">Game Design</span>
@@ -244,11 +250,11 @@
             </div>
           </article>
 
-          <!-- To Me From -->
           <article class="project-card">
             <div class="project-content">
               <div class="project-meta">
                 <span class="project-type">Collaboration</span>
+                <span class="status-chip">External Link</span>
               </div>
               <h3 class="project-title">To Me From</h3>
               <p class="project-description">
@@ -265,7 +271,6 @@
           </article>
         </div>
       </section>
-
     </div>
   </main>
 
@@ -273,17 +278,21 @@
   <footer class="site-footer">
     <div class="site">
       <div class="footer-inner">
-        <p class="footer-copyright">© <span id="year"></span> Made by Skows LLC. All rights reserved.</p>
-        <nav class="footer-links">
-          <a href="legal.html">Legal</a>
+        <div>
+          <p class="footer-brand">Made by Skows LLC</p>
+          <p class="footer-copyright">&copy; <span id="year"></span> Made by Skows LLC. All rights reserved.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="portfolio.html">Work</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
+          <a href="legal.html">Legal</a>
         </nav>
       </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

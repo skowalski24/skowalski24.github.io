@@ -97,6 +97,7 @@
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Header -->
   <header class="site-header">
@@ -112,8 +113,8 @@
         
         <nav class="site-nav" aria-label="Main navigation">
           <a href="index.html">Home</a>
+          <a href="portfolio.html" class="active">Work</a>
           <a href="products.html">Products</a>
-          <a href="portfolio.html" class="active">Portfolio</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </nav>
@@ -121,17 +122,22 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <div class="site">
       
       <!-- Case Study Hero -->
       <section class="case-hero">
-        <a href="portfolio.html" class="back-link">← Back to Portfolio</a>
-        <span class="tag">Android · iOS (Soon) · Unity · Idle</span>
+        <a href="portfolio.html" class="back-link">← Back to Work</a>
+        <span class="tag">Android · Unity · Idle</span>
         <h1>Cult of Coin</h1>
         <p class="case-intro">
           Prestige-Driven Idle Economy Systems Design Case Study
         </p>
+        <div class="store-links">
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.madebyskows.cultofcoin" target="_blank" rel="noopener" aria-label="Get Cult of Coin on Google Play">
+            <img src="assets/Google/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play">
+          </a>
+        </div>
       </section>
 
       <!-- Case Study Content -->
@@ -464,7 +470,7 @@
                 <dt>Timeline</dt>
                 <dd>Oct 2025 – Jan 2026</dd>
                 <dt>Platform</dt>
-                <dd>iOS, Android</dd>
+                <dd>Android</dd>
                 <dt>Engine</dt>
                 <dd>Unity / C#</dd>
               </dl>
@@ -485,7 +491,8 @@
             <div class="case-meta">
               <h3>Links</h3>
               <ul style="list-style: none; padding: 0;">
-                <li style="margin-bottom: 0.5em;"><a href="product-cult-of-coin.html">Product Page</a></li>
+                <li style="margin-bottom: 0.5em;"><a href="product-cult-of-coin.html">View Product</a></li>
+                <li style="margin-bottom: 0.5em;"><a href="https://play.google.com/store/apps/details?id=com.madebyskows.cultofcoin" target="_blank" rel="noopener">Google Play</a></li>
               </ul>
             </div>
           </aside>
@@ -510,10 +517,16 @@
   <footer class="site-footer">
     <div class="site">
       <div class="footer-inner">
-        <p class="footer-copyright">© <span id="year"></span> Made by Skows LLC. All rights reserved.</p>
-        <nav class="footer-links">
-          <a href="legal.html">Legal</a>
+        <div>
+          <p class="footer-brand">Made by Skows LLC</p>
+          <p class="footer-copyright">&copy; <span id="year"></span> Made by Skows LLC. All rights reserved.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="portfolio.html">Work</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
+          <a href="legal.html">Legal</a>
         </nav>
       </div>
     </div>
